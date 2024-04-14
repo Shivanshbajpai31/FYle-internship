@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tax Calculator</h1>
+        <form id="tax-form">
+            <div class="form-group">
+                <label for="income">Enter gross annual income:</label><br>
+                <input type="number" id="income" name="income"><i class="error-icon fas fa-exclamation-circle"></i><br>
+            </div>
+            <div class="form-group">
+                <label for="extra-income">Enter extra income:</label><br>
+                <input type="number" id="extra-income" name="extra-income"><i class="error-icon fas fa-exclamation-circle"></i><br>
+            </div>
+            <div class="form-group">
+                <label for="age-group">Enter age group:</label><br>
+                <select id="age-group" name="age-group">
+                    <option value="0">18-25</option>
+                    <option value="1">26-35</option>
+                    <option value="2">36-45</option>
+                    <option value="3">46-55</option>
+                    <option value="4">56-65</option>
+                    <option value="5">66+</option>
+                </select><i class="error-icon fas fa-exclamation-circle"></i><br>
+            </div>
+            <div class="form-group">
+                <label for="deductions">Enter total applicable deductions:</label><br>
+                <input type="number" id="deductions" name="deductions"><i class="error-icon fas fa-exclamation-circle"></i><br>
+            </div>
+            <input type="submit" value="Calculate Tax">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
